@@ -11,7 +11,8 @@ namespace helloWorld1
         static void Main(string[] args)
         {
             Console.WriteLine("Hello Wolrd!");
-            Console.WriteLine("Adding new line from remote")
+            Console.WriteLine("Adding new line from remote")p;
+            Console.WriteLine("Modification in Local");
            Console.ReadKey();
         }
     }
