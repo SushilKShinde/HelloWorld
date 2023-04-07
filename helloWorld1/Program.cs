@@ -11,12 +11,26 @@ namespace helloWorld1
         static void Main(string[] args)
         {
             Console.WriteLine("Hello Wolrd!");
-
             Console.WriteLine("Adding new line from remote");
             Console.WriteLine("Modification in Local");
             Console.WriteLine("Adding new line from remote");
             Console.WriteLine("Modified in Remote");
-           Console.ReadKey();
+            Console.ReadKey();
+
+            Person person = new Person();
+            // displaying message on screen
+            Console.WriteLine("Enter person name: ");
+            // reading the input from user
+            person.name = Console.ReadLine();
+            Console.WriteLine("Enter person height: ");
+            person.height = Convert.ToSingle(Console.ReadLine());
+            Console.WriteLine("Enter person weight: ");
+            person.weight = Convert.ToSingle(Console.ReadLine());
+            Console.WriteLine("Enter person age: ");
+            person.age = Convert.ToInt32(Console.ReadLine());
+            person.Speak();
+            person.PersonDetails(person.name, person.height, person.weight, person.age);
+            Console.ReadLine();
         }
     }
 }
